@@ -1,0 +1,62 @@
+# 1. Print "Hello, World!"
+print("Hello, World!")
+
+# 2. Calculate the sum of two numbers.
+def sum_two_numbers(a, b):
+    return a + b
+
+# 3. Find the square of a number.
+def square_number(n):
+    return n ** 2
+
+# 4. Accept the user's name and greet them with it.
+def greet_user():
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+
+# 5. Check whether a number is even or odd.
+def check_even_odd(n):
+    return "Even" if n % 2 == 0 else "Odd"
+
+# 6. Return a new list with unique elements of the first list.
+def unique_elements(lst):
+    return list(set(lst))
+
+# 7. Convert Celsius to Fahrenheit.
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+# 8. Calculate the area of a circle.
+def circle_area(radius):
+    return math.pi * radius ** 2
+
+# 9. Reverse a given string.
+def reverse_string(s):
+    return s[::-1]
+
+# 10. Check if a number is a prime number.
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# 11. Calculate the factorial of a number.
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n - 1)
+
+# 12. Find the largest item from a given list.
+def largest_in_list(lst):
+    return max(lst)
+
+# 13. Check whether a number is in a given range.
+def in_range(n, start, end):
+    return start <= n <= end
+
+# 14. Calculate the number of uppercase and lowercase letters in a string.
+def count_case(s):
+    upper = sum(1 for c in s if c.isupper())
+    lower = sum(1 for c in s if c.islower())
+    return {"Uppercase": upper, "Lowercase": lower}
