@@ -1,0 +1,26 @@
+# 15. Multiply all the numbers in a list.
+def multiply_list(lst):
+    result = 1
+    for num in lst:
+        result *= num
+    return result
+
+# 16. Check if a number is perfect.
+def is_perfect(n):
+    return n == sum(i for i in range(1, n) if n % i == 0)
+
+# 17. Check if a string is a palindrome.
+def is_palindrome(s):
+    return s == s[::-1]
+
+# 18. Check if a string is a pangram.
+def is_pangram(s):
+    return set(string.ascii_lowercase).issubset(set(s.lower()))
+
+# 19. Calculate the sum of the digits of a number.
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(n))
+
+# 20. Generate a list of four random numbers.
+def random_numbers():
+    return [random.randint(1, 100) for _ in range(4)]
