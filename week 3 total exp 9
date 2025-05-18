@@ -1,0 +1,86 @@
+Exercise Programs on Basic Control Structures & Loops
+a) Check if a number is even or odd
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+b) Print decimal equivalents of 1/2, 1/3, ..., 1/10 using a for loop
+for i in range(2, 11):
+    print(f"1/{i} = {1/i}")
+
+c) Display reversal of a number
+num = int(input("Enter a number: "))
+reverse = 0
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+print("Reversed number:", reverse)
+
+d) Find the biggest number among 3 numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Biggest number is:", a)
+elif b >= a and b >= c:
+    print("Biggest number is:", b)
+else:
+    print("Biggest number is:", c)
+
+e) Countdown using a while loop
+
+num = int(input("Enter a number: "))
+while num >= 0:
+    print(num)
+    num -= 1
+
+II. Exercise Programs on Operators & I/O Operations
+a) Sum of 2 numbers using command line arguments
+
+import sys
+
+if len(sys.argv) != 3:
+    print("Usage: python script.py <num1> <num2>")
+else:
+    num1 = int(sys.argv[1])
+    num2 = int(sys.argv[2])
+    print("Sum:", num1 + num2)
+
+b) Usage of various operators in Python
+a = 10
+b = 3
+
+# Arithmetic Operators
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+print("Floor Division:", a // b)
+
+# Comparison Operators
+print("Equal:", a == b)
+print("Not Equal:", a != b)
+print("Greater than:", a > b)
+print("Logical AND:", a > 5 and b < 5)
+print("Logical OR:", a < 5 or b < 5)
+print("Logical NOT:", not(a > b))
+
+c) Check if a person is eligible for voting
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+d) Check if a year is a leap year
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
